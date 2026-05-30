@@ -1,3 +1,8 @@
 <Solution>
-  <Project Path="HelloAgent/HelloAgent.csproj" />
+  <Folder Name="/Section4-Setup/">
+    <Project Path="HelloAgent/HelloAgent.csproj" />
+  </Folder>
+  <Folder Name="/Section5-getting-started/">
+    <Project Path="BasicAgentApp/BasicAgentApp.csproj" Id="ee2d129a-a4cb-4360-8970-a7675aaa2b3f" />
+  </Folder>
 </Solution>

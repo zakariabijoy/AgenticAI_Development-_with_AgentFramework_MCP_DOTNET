@@ -2,7 +2,6 @@
 using Microsoft.Agents.AI;
 using Azure.Identity;
 using OpenAI.Chat;
-using System.ClientModel;
 
 // 1. Define the variables we extracted from Microsoft Foundry
 var endpoint = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT") ?? throw new InvalidOperationException("AZURE_OPENAI_ENDPOINT environment variable is not set.");
