@@ -26,5 +26,13 @@ Console.WriteLine($"Agent Name: {supportAgent.Name} is online. \n");
 string userIssue = "I am getting a DNS resolution error when connecting to the corporate VPN from a coffee shop.";
 Console.WriteLine($"User: {userIssue}");
 
-AgentResponse response = await supportAgent.RunAsync(userIssue);
-Console.WriteLine($"Agent: {response.Text}");
+//non-streaming response
+//AgentResponse response = await supportAgent.RunAsync(userIssue);
+//// the entire response is available at once 
+//Console.WriteLine($"Agent: {response.Text}");
+
+await foreach (AgentResponseUpdate update in supportAgent.RunStreamingAsync(userIssue))
+{
+    //Print each token to the console/UI exactly as it is generated
+    Console.Write(update.Text);
+}
