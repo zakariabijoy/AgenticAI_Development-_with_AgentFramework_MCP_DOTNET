@@ -4,6 +4,7 @@
   </Folder>
   <Folder Name="/2. Getting Started/">
     <Project Path="BasicAgentApp/BasicAgentApp.csproj" Id="ee2d129a-a4cb-4360-8970-a7675aaa2b3f" />
+    <Project Path="MultiTurn/MultiTurn.csproj" Id="894b479b-e568-4a30-85e7-9627b027fda1" />
     <Project Path="Streaming/Streaming.csproj" Id="c74ad171-bd30-4742-b108-280b26e8a6c5" />
   </Folder>
 </Solution>
